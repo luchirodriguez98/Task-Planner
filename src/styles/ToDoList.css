@@ -1,0 +1,11 @@
+.list-todo{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .list-todo{
+        grid-column: 2;
+        width: 50%;
+    }
+}

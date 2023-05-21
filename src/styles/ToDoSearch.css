@@ -1,0 +1,20 @@
+.input-search{
+    display: flex;
+    width: 80vw;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto 60px auto;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 14px 23px 12px rgb(253, 186, 186);
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .input-search{
+        grid-column: 2;
+        width: 50%;
+        margin: 0;
+    }
+}

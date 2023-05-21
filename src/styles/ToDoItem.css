@@ -1,0 +1,26 @@
+.list-todo-item{
+    display: flex;
+    list-style: none;
+    height: 50px;
+    background-color: var(--color-white);
+    margin: 20px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 14px 23px 12px rgb(253, 186, 186);
+}
+.list-todo-item p{
+    padding-left: 10px;
+    width: 80%;
+    align-self: center;
+}
+.list-todo-item--cancel, .list-todo-item--check{
+    align-self: center;
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    .list-todo-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --font-weight-sm: 400;
+  --font-weight-md: 500;
+  --font-weight-lg: 800;
+  --color-pink: rgb(250, 174, 174);
+  --color-violet: rgba(255, 159, 228, 0.329);
+  --color-dark-violet: rgba(148, 55, 122, 0.884);
+  --color-white: rgb(255, 255, 255);
+}
+
+body{
+  background: var(--color-pink);
+  background: radial-gradient(circle, var(--color-pink) 0%, var(--color-violet) 100%);;
+  font-family: 'Wix Madefor Display', sans-serif;
+  
+}
+
+@media (min-width:768px) {
+  body{
+      padding-left: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px; 
+  }
+}
