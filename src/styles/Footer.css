@@ -1,10 +1,10 @@
 .footer{
-    font-size: 16px;
+    font-size: 20px;
     color: var(--color-dark-violet);
     width: 100vw;
+    height: 5vh;
     font-weight: var(--font-weight-md);
     
-    position: fixed;
-    bottom: 10px;
+
     text-align: center;
 }

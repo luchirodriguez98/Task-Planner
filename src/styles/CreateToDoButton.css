@@ -1,4 +1,4 @@
-button{
+.addTask-button-mobile{
     width: 50px;
     height: 50px;
     font-weight: var(--font-weight-lg);
@@ -14,18 +14,57 @@ button{
     bottom: 10px;
     right: 15px;
 }
-.addItem{
+.addItemContainer, .title-principal-tablet, .img-tablet, .addTask-button-tablet, .addTask-input-tablet{
     display: none;
 }
 
+
 @media (min-width:768px) {
-    button{
+    .addTask-button-mobile{
         display: none;
     }
-    .addItem{
-        grid-column: 1;
+    .addItem{ 
+        display: flex;     
+        flex-direction: column;
+        align-content: end;
         width: 45%;
-        height: 90vh;
+        height: 75vh;
         background-color: var(--color-white);
+        border-radius: 5px;
+    }
+    .title-principal-tablet{
+        display: block;
+        font-size: 45px;
+        padding-left: 20px;
+        margin: 50px 0px 50px 10px;
+        color: var(--color-pink);
+    }
+    .img-tablet{
+        display: inline;
+        width: 80%;
+    }
+    .addTask-input-tablet{
+        display: block;
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        margin: 0 auto 30px auto;
+        background-color: var(--color-white);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 4px 50px 5px rgb(253, 186, 186);
+        text-align: center;
+    }
+    .addTask-button-tablet{
+        display: block;
+        width: 120px;
+        height: 30px;
+        margin: 0 auto;
+        background-color: var(--color-pink);
+        color: var(--color-white);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 50px 2px rgb(253, 186, 186);
+        cursor: pointer;
     }
 }

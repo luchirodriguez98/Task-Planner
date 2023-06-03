@@ -2,10 +2,21 @@
     width: 80vw;
     margin: 0 auto;
 }
+.title-secundary-tablet{
+    display: none;
+}
 
 @media (min-width:768px) {
     .list-todo{
-        grid-column: 2;
-        width: 50%;
+        display: flex;    
+        flex-direction: column;    
+        width: 45%;
+        margin: 0;
+    }
+    .title-secundary-tablet{
+        display: block;
+        font-size: 30px;
+        margin-left: 10px;
+        color: var(--color-white);
     }
 }

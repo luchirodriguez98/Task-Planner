@@ -3,6 +3,9 @@ import "../styles/ToDoSearch.css"
 
 export function ToDoSearch() {
     return(
-        <input className="input-search" placeholder="search your tasks" />
+        <div className="input-search">
+        <input placeholder="Search your tasks" />
+        <img className="img-search" src="../img/search.png"></img>
+        </div>
     )
 }
